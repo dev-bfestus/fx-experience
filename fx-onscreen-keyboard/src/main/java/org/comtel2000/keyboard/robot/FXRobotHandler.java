@@ -174,6 +174,8 @@ public class FXRobotHandler implements IRobot {
 			case java.awt.event.KeyEvent.VK_F12:
 				firePressedReleased(focusNode, ch, KeyCode.F12);
 				return;
+			default:
+				break;
 			}
 			KeyCode fxKeyCode = getKeyCode(ch);
 			if (fxKeyCode != null) {

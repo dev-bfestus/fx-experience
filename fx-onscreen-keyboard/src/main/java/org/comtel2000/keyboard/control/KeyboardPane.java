@@ -597,6 +597,8 @@ public class KeyboardPane extends Region implements StandardKeyCode, EventHandle
 						});
 					}
 					break;
+				default:
+					break;
 				}
 
 				colPane.add(button, colIdx, 0);
@@ -787,6 +789,8 @@ public class KeyboardPane extends Region implements StandardKeyCode, EventHandle
 					scaleProperty.set(scaleProperty.get() + scaleOffsetProperty.get());
 				}
 				return;
+			default:
+				break;
 			}
 		}
 

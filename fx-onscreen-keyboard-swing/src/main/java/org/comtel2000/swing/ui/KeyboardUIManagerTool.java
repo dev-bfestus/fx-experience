@@ -101,7 +101,7 @@ public class KeyboardUIManagerTool {
 	}
 
 	private static FocusListener createFocusListener(EventCallback c) {
-		FocusListener l = new FocusListener() {
+		return new FocusListener() {
 			@Override
 			public void focusLost(FocusEvent e) {
 				c.call(null, false);
@@ -112,7 +112,6 @@ public class KeyboardUIManagerTool {
 				c.call(e.getComponent(), true);
 			}
 		};
-		return l;
 	}
 
 	private static MouseListener createMouseDoubleClickListener(EventCallback c) {
