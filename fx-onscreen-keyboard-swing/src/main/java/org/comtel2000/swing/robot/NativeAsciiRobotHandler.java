@@ -210,7 +210,7 @@ public class NativeAsciiRobotHandler implements IRobot {
   /**
    * does not work for extended codepage signs
    */
-  private void winAltDump(Robot robot, int ch) {
+  private static void winAltDump(Robot robot, int ch) {
     robot.keyPress(VK_ALT);
     for (int i = 3; i >= 0; --i) {
       int vk = ch / (int) (Math.pow(10, i)) % 10 + VK_NUMPAD0;

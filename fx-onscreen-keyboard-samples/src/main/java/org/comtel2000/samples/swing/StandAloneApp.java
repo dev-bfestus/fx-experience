@@ -131,7 +131,7 @@ public class StandAloneApp extends JApplet {
     popup.show(scene.getWindow());
   }
 
-  private void showHelp() {
+  private static void showHelp() {
     System.out.println();
     System.out.println("\t--scale=<double>\tset the intial scale");
     System.out.println("\t--lang=<locale>\t\tsetting keyboard language (en,de,ru,..)");
@@ -142,7 +142,7 @@ public class StandAloneApp extends JApplet {
     System.exit(0);
   }
 
-  private Locale parseLocale(String l) throws Exception {
+  private static Locale parseLocale(String l) throws Exception {
     if (l == null || l.isEmpty()) {
       throw new ParseException("invalid locale", 0);
     }
